@@ -3,12 +3,17 @@ package com.qa.opencart.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.qa.opencart.constants.AppConstants;
+import com.qa.opencart.utils.ElementUtil;
+
 public class LoginPage {
 	
 	private WebDriver driver;
+	private ElementUtil eleUtil;
 	
 	public LoginPage(WebDriver driver) {
 		this.driver=driver;
+		eleUtil = new ElementUtil(driver);
 	}
 	
 	//By locators
@@ -21,21 +26,23 @@ public class LoginPage {
 	
 	//page actions
 	public String getLoginPageTitle() {
-		return driver.getTitle();
+		String title = eleUtil.waitForTitleIs(AppConstants.DEFAULT_TIMEOUT, AppConstants.LOGIN_PAGE_TITLE);
+		return title;
 	}
 	
 	public String getLoginPageUrl() {
-		return driver.getCurrentUrl();
+		String url =eleUtil.waitForUrlContains(AppConstants.DEFAULT_TIMEOUT, AppConstants.LOGIN_PAGE_URL_ROUTE);
+		return url;
 	}
 	
 	public boolean isForgotPasswordExists() {
-		return driver.findElement(forgotPassword).isDisplayed();
+		return eleUtil.doEleIsDisplayed(forgotPassword);
 	}
 	
 	public AccountsPage doLogin(String uname,String pass) {
-		driver.findElement(emailId).sendKeys(uname);
-		driver.findElement(password).sendKeys(pass);
-		driver.findElement(loginBtn).click();
+		eleUtil.doSendKeysWithWait(emailId, AppConstants.DEFAULT_TIMEOUT, uname);
+		eleUtil.doSendKeys(password, pass);
+		eleUtil.doClick(loginBtn);
 		return new AccountsPage(driver);
 		
 	}

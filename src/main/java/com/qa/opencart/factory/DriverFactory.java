@@ -7,6 +7,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -16,6 +17,7 @@ public class DriverFactory {
 	
 	public WebDriver driver;
 	public Properties prop;
+	public static String highlight;
 	
 	/**
 	 * This method initialize the driver on the basis of given browser.
@@ -29,7 +31,9 @@ public class DriverFactory {
 		switch (browser) {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
-			driver=new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--remote-allow-origins=*");
+			driver=new ChromeDriver(options);
 			break;
 			
 		case "ff":

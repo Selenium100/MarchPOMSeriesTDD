@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [Open Cart Regression Test]" parallel="tests">
+  <test name="Accounts Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.opencart.tests.AccountPageTest">
+        <methods>
+          <include name="accSetup"/>
+          <include name="accountPageTitleTest"/>
+          <include name="setup"/>
+          <include name="accPageHeadersTest"/>
+          <include name="isSearchBarExistTest"/>
+          <include name="tearDown"/>
+          <include name="accountPageUrlTest"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.AccountPageTest -->
+    </classes>
+  </test> <!-- Accounts Test(failed) -->
+  <test name="Login Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.opencart.tests.LoginTest">
+        <methods>
+          <include name="doLogin"/>
+          <include name="openCartLoginTest"/>
+          <include name="openCartLoginPageUrlTest"/>
+          <include name="setup"/>
+          <include name="isForgotPasswordLinkExists"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.LoginTest -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+</suite> <!-- Failed suite [Open Cart Regression Test] -->
