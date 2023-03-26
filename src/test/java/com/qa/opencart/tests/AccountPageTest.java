@@ -58,7 +58,6 @@ public class AccountPageTest extends BaseTest {
 		searchResultPage = account.performSearch("Macbook");
 		if(searchResultPage.isSearchSuccessful()) {
 			productInfo=searchResultPage.selectProduct("MacBook Pro");
-			
 		}
 	}
 	
