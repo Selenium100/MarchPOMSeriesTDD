@@ -8,6 +8,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.qa.opencart.constants.AppConstants;
+
 public class AccountsPage {
 
 	private WebDriver driver;
@@ -31,7 +33,7 @@ public class AccountsPage {
 
 	public boolean getAccountPageUrl() {
 		String url = driver.getCurrentUrl();
-		Predicate<String> s = i -> i.contains("route=account/account");
+		Predicate<String> s = i -> i.contains(AppConstants.ACC_PAGE_URL_ROUTE);
 		if (s.test(url)) {
 			return true;
 		}
@@ -52,6 +54,11 @@ public class AccountsPage {
 
 		List<String> secHeaderList = secList.stream().map(i -> i.getText()).collect(Collectors.toList());
 		return secHeaderList;
+	}
+	
+	public boolean isLogoutExists() {
+		boolean isLogoutExists = driver.findElement(logoutBtn).isDisplayed();
+		return isLogoutExists;
 	}
 
 }

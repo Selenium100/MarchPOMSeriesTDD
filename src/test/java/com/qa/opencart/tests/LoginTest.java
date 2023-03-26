@@ -4,13 +4,14 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qa.opencart.base.BaseTest;
+import com.qa.opencart.constants.AppConstants;
 
 public class LoginTest extends BaseTest {
 
 	@Test(priority = 0, description = "Title Test")
 	public void openCartLoginTest() {
 		String title = login.getLoginPageTitle();
-		Assert.assertEquals(title, "Account Login");
+		Assert.assertEquals(title, AppConstants.LOGIN_PAGE_TITLE);
 	}
 
 	@Test(priority = 1, description = "Url Test")
@@ -27,7 +28,10 @@ public class LoginTest extends BaseTest {
 	
 	@Test(priority = 3, description = "Login Test")
 	public void doLogin() {
-		login.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+		account = login.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+		boolean isLogoutExists = account.isLogoutExists();
+		Assert.assertEquals(isLogoutExists, true);
+		
 	}
 
 }
