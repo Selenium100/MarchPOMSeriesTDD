@@ -12,4 +12,10 @@
       <class name="com.qa.opencart.tests.AccountPageTest"/>
     </classes>
   </test> <!-- Test -->
+  
+    <test  name="ProductPage Test">
+    <classes>
+      <class name="com.qa.opencart.tests.ProductPageTest"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

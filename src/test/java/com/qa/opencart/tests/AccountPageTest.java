@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.opencart.base.BaseTest;
@@ -47,17 +48,49 @@ public class AccountPageTest extends BaseTest {
 				AppConstants.ACC_PAGE_HEARDERS_LIST.stream().sorted((i,j) -> i.compareTo(j)).collect(Collectors.toList()));
 	}
 	
-	@Test(priority = 4, description = "Search Page Check Test")
-	public void searchCheckTest() {
-		searchResultPage = account.performSearch("Macbook");
+	@DataProvider(name = "getSearchData")
+	public Object[][] getDataSearchCheck(){
+		return new Object[][] {
+			{"Macbook"},
+			{"Samsung"},
+			{"iMac"}
+					
+		};
+	}
+	
+	@Test(priority = 4, description = "Search Page Check Test", dataProvider = "getSearchData")
+	public void searchCheckTest(String searchProduct) {
+		searchResultPage = account.performSearch(searchProduct);
 		assertTrue(searchResultPage.isSearchSuccessful());
 	}
 	
-	@Test(priority = 5, description = "Search Macbookpro ")
-	public void searchTest() {
-		searchResultPage = account.performSearch("Macbook");
+	@DataProvider(name = "getData")
+	public Object[][] getData(){
+		
+		Object[][] data = new Object[3][2];
+		data[0][0] =  "Macbook";
+		data[0][1] =  "MacBook Pro";
+		
+		data[1][0] =  "Samsung";
+		data[1][1] =  "Samsung Galaxy Tab 10.1";
+		
+		data[2][0] =  "iMac";
+		data[2][1] =  "iMac";
+		
+		
+		return data;
+		
+		
+		
+	}
+	
+	@Test(priority = 5, description = "Search Macbookpro " , dataProvider = "getData")
+	public void searchTest(String productSearch, String productName) {
+		searchResultPage = account.performSearch(productSearch);
 		if(searchResultPage.isSearchSuccessful()) {
-			productInfo=searchResultPage.selectProduct("MacBook Pro");
+			productInfo=searchResultPage.selectProduct(productName);
+			String actualHeader = productInfo.getProductHaeder(productName);
+			Assert.assertEquals(actualHeader, productName);
 		}
 	}
 	

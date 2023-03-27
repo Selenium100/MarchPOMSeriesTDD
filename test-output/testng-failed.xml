@@ -3,16 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.opencart.tests.LoginTest">
+      <class name="com.qa.opencart.tests.ProductPageTest">
         <methods>
-          <include name="doLogin"/>
-          <include name="openCartLoginTest"/>
-          <include name="openCartLoginPageUrlTest"/>
+          <include name="productPriceMetaDataTest"/>
           <include name="setup"/>
-          <include name="isForgotPasswordLinkExists"/>
+          <include name="productInfoSetup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.opencart.tests.LoginTest -->
+      </class> <!-- com.qa.opencart.tests.ProductPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
