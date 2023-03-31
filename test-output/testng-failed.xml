@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [Open Cart Regression Test]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qa.opencart.listeners.ExtentReportListener"/>
+    <listener class-name="com.qa.opencart.listeners.TestAllureListener"/>
+    <listener class-name="com.qa.opencart.listeners.AnnotationTransformer"/>
+  </listeners>
+  <test name="Login Test(failed)" parallel="tests">
     <classes>
-      <class name="com.qa.opencart.tests.ProductPageTest">
+      <class name="com.qa.opencart.tests.LoginTest">
         <methods>
-          <include name="productPriceMetaDataTest"/>
+          <include name="openCartLoginPageUrlTest"/>
           <include name="setup"/>
-          <include name="productInfoSetup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.opencart.tests.ProductPageTest -->
+      </class> <!-- com.qa.opencart.tests.LoginTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Login Test(failed) -->
+</suite> <!-- Failed suite [Open Cart Regression Test] -->

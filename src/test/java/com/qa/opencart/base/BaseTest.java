@@ -10,6 +10,7 @@ import com.qa.opencart.factory.DriverFactory;
 import com.qa.opencart.pages.AccountsPage;
 import com.qa.opencart.pages.LoginPage;
 import com.qa.opencart.pages.ProductInfoPage;
+import com.qa.opencart.pages.RegistrationPage;
 import com.qa.opencart.pages.SearchResultPage;
 
 public class BaseTest {
@@ -21,6 +22,7 @@ public class BaseTest {
 	public AccountsPage account;
 	public SearchResultPage searchResultPage;
 	public ProductInfoPage productInfo;
+	public RegistrationPage register;
 
 	@BeforeTest
 	public void setup() {
@@ -29,6 +31,7 @@ public class BaseTest {
 		driver = df.initDriver(prop);
 		login = new LoginPage(driver);
 		account = new AccountsPage(driver);
+		register = new RegistrationPage(driver);
 	}
 	
 	@AfterTest

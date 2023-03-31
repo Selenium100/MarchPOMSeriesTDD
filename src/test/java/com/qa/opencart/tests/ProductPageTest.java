@@ -55,6 +55,7 @@ public class ProductPageTest extends BaseTest {
 		searchResultPage = account.performSearch(productName);
 		productInfo = searchResultPage.selectProduct(productSearch);
 		int actualImageCount = productInfo.getProductImageCount();
+		System.out.println("Actual Image count is : " +  actualImageCount);
 		Assert.assertEquals(actualImageCount, imageCount);
 	}
 

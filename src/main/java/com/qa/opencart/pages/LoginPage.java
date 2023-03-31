@@ -21,6 +21,7 @@ public class LoginPage {
 	private By password = By.id("input-password");
 	private By loginBtn = By.xpath("//input[@value='Login']");
 	private By forgotPassword = By.linkText("Forgotten Password");
+	private By registerLink = By.linkText("Register");
 	
 	
 	
@@ -45,6 +46,12 @@ public class LoginPage {
 		eleUtil.doClick(loginBtn);
 		return new AccountsPage(driver);
 		
+	}
+	
+	public RegistrationPage navigaeToRegisterPage() {
+		System.out.println("Navigating to Register Page...");
+		eleUtil.doClick(registerLink);
+		return new RegistrationPage(driver);
 	}
 	
 

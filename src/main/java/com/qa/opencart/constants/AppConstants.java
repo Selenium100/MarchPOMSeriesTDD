@@ -15,6 +15,7 @@ public class AppConstants {
 	public static final int MACBOOK_PRO_IMAGES_COUNT = 4;
 	public static final int SAMSUNG_IMAGES_COUNT = 7;
 	public static final int IMAC_IMAGES_COUNT = 3;
+	public static final String ACC_CREATE_SUCCESS_MSG = "Your Account Has Been Created!";
 	
 	
 
