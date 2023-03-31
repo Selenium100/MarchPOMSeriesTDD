@@ -8,6 +8,10 @@ public class Retry implements IRetryAnalyzer {
 	private int count = 0;
 	private static int maxTry = 3;
 
+	/**
+	Retry Logic written by Nitya
+	
+	**/
 	@Override
 	public boolean retry(ITestResult iTestResult) {
 		if (!iTestResult.isSuccess()) { // Check if test not succeed
