@@ -9,7 +9,7 @@ public class Retry implements IRetryAnalyzer {
 	private static int maxTry = 3;
 
 	/**
-	Retry Logic written by Nitya
+	Retry Logic written by Nitya 2
 	
 	**/
 	@Override
