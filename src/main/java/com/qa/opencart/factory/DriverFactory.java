@@ -17,6 +17,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import com.qa.opencart.exceptions.FrameworkException;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
@@ -59,6 +61,7 @@ public class DriverFactory {
 
 		default:
 			System.out.println("Please provide correct browser name.." + browser);
+			//throw new FrameworkException("Please provide correct browser name.." + browser);
 			break;
 		}
 

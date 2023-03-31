@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Register Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/11</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 31 10:30:59 IST 2023</td>
+<td>Started on:</td><td>Fri Mar 31 14:28:31 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>141 seconds (141383 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2159 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,68 +67,447 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest<br>Parameters: test1, Ranjan, nitya@gmail.com, 730389735, nilamani10, yes</td>
-<td></td>
-<td>13</td>
-<td>com.qa.opencart.tests.RegisterTest@4e08acf9</td></tr>
+<td title='com.qa.opencart.tests.RegisterTest.setup()'><b>setup</b><br>Test class: com.qa.opencart.tests.RegisterTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1064523279", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1064523279'><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.RegisterTest@4af70944</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest<br>Parameters: test2, Ranjan, nitya1@gmail.com, 730389736, nilamani11, yes</td>
+<td title='com.qa.opencart.tests.RegisterTest.registrationSetup()'><b>registrationSetup</b><br>Test class: com.qa.opencart.tests.RegisterTest</td>
 <td></td>
-<td>10</td>
-<td>com.qa.opencart.tests.RegisterTest@4e08acf9</td></tr>
+<td>0</td>
+<td>com.qa.opencart.tests.RegisterTest@4af70944</td></tr>
 <tr>
-<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest<br>Parameters: test3, Ranjan, nitya2@gmail.com, 730389737, nilamani12, yes</td>
+<td title='com.qa.opencart.tests.RegisterTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.opencart.tests.RegisterTest</td>
 <td></td>
-<td>10</td>
-<td>com.qa.opencart.tests.RegisterTest@4e08acf9</td></tr>
+<td>0</td>
+<td>com.qa.opencart.tests.RegisterTest@4af70944</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest<br>Parameters: test4, Ranjan, nitya3@gmail.com, 730389738, nilamani13, yes</td>
-<td></td>
-<td>10</td>
-<td>com.qa.opencart.tests.RegisterTest@4e08acf9</td></tr>
+<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1083144290", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1083144290'><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.RegisterTest@4af70944</td></tr>
 <tr>
-<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest<br>Parameters: test5, Ranjan, nitya4@gmail.com, 730389739, nilamani14, yes</td>
-<td></td>
-<td>10</td>
-<td>com.qa.opencart.tests.RegisterTest@4e08acf9</td></tr>
+<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace178280886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace178280886'><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.RegisterTest@4af70944</td></tr>
 <tr>
-<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest<br>Parameters: test6, Ranjan, nitya5@gmail.com, 730389740, nilamani15, yes</td>
-<td></td>
-<td>9</td>
-<td>com.qa.opencart.tests.RegisterTest@4e08acf9</td></tr>
+<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1900560072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1900560072'><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.RegisterTest@4af70944</td></tr>
 <tr>
-<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest<br>Parameters: test7, Ranjan, nitya6@gmail.com, 730389741, nilamani16, yes</td>
-<td></td>
-<td>10</td>
-<td>com.qa.opencart.tests.RegisterTest@4e08acf9</td></tr>
+<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace84597369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace84597369'><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.RegisterTest@4af70944</td></tr>
 <tr>
-<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest<br>Parameters: test8, Ranjan, nitya7@gmail.com, 730389742, nilamani17, yes</td>
-<td></td>
-<td>20</td>
-<td>com.qa.opencart.tests.RegisterTest@4e08acf9</td></tr>
+<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace118821923", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace118821923'><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.RegisterTest@4af70944</td></tr>
 <tr>
-<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest<br>Parameters: test9, Ranjan, nitya8@gmail.com, 730389743, nilamani18, yes</td>
-<td></td>
-<td>10</td>
-<td>com.qa.opencart.tests.RegisterTest@4e08acf9</td></tr>
+<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace595281208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace595281208'><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.RegisterTest@4af70944</td></tr>
 <tr>
-<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest<br>Parameters: test10, Ranjan, nitya9@gmail.com, 730389744, nilamani19, yes</td>
-<td></td>
-<td>10</td>
-<td>com.qa.opencart.tests.RegisterTest@4e08acf9</td></tr>
+<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1702955567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1702955567'><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.RegisterTest@4af70944</td></tr>
 <tr>
-<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest<br>Parameters: test11, Ranjan, nitya10@gmail.com, 730389745, nilamani20, yes</td>
-<td></td>
-<td>10</td>
-<td>com.qa.opencart.tests.RegisterTest@4e08acf9</td></tr>
+<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1621449126", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1621449126'><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.RegisterTest@4af70944</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace306678768", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace306678768'><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.RegisterTest@4af70944</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace904904057", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace904904057'><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.RegisterTest@4af70944</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.RegisterTest.registerUserTest()'><b>registerUserTest</b><br>Test class: com.qa.opencart.tests.RegisterTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace893339066", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace893339066'><pre>java.lang.NullPointerException
+	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
+	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:626)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.RegisterTest@4af70944</td></tr>
 </table><p>
 </body>
 </html>
