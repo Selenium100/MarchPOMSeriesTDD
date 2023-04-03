@@ -2,6 +2,9 @@ package com.qa.opencart.errors;
 
 public class FrameworkException extends RuntimeException {
 	
+	/**
+	 * This will create Custome Exception
+	 */
 	public FrameworkException() {
 		super();
 	}
