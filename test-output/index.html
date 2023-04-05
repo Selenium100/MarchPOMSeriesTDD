@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Open_Cart_Regression_Test">
-              <span class="suite-name border-skipped">Open Cart Regression Test</span>
+              <span class="suite-name border-failed">Open Cart Regression Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">33 methods,  33 skipped,  </span>
+                    <span class="method-stats">36 methods, 1 failed,  3 skipped,  32 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Open_Cart_Regression_Test" class="hide-methods failed suite-Open_Cart_Regression_Test"> (hide)</a> <!-- hide-methods failed suite-Open_Cart_Regression_Test -->
+                      <a href="#" panel-name="suite-Open_Cart_Regression_Test" class="show-methods failed suite-Open_Cart_Regression_Test"> (show)</a> <!-- show-methods failed suite-Open_Cart_Regression_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-Open_Cart_Regression_Test">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.LoginTest" hash-for-method="openCartLoginPageUrlTest">openCartLoginPageUrlTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Open_Cart_Regression_Test -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -102,47 +116,7 @@
                     <div class="method-list-content skipped suite-Open_Cart_Regression_Test">
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="accPageHeadersTest">accPageHeadersTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="accountPageTitleTest">accountPageTitleTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="accountPageUrlTest">accountPageUrlTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.LoginTest" hash-for-method="doLogin">doLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.ProductPageTest" hash-for-method="getProductImageCountTest">getProductImageCountTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.ProductPageTest" hash-for-method="getProductImageCountTest">getProductImageCountTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.ProductPageTest" hash-for-method="getProductImageCountTest">getProductImageCountTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.LoginTest" hash-for-method="isForgotPasswordLinkExists">isForgotPasswordLinkExists</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="isSearchBarExistTest">isSearchBarExistTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.LoginTest" hash-for-method="openCartLoginPageUrlTest">openCartLoginPageUrlTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -152,120 +126,179 @@
                       <br/>
                       <span>
                         <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.LoginTest" hash-for-method="openCartLoginPageUrlTest">openCartLoginPageUrlTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Open_Cart_Regression_Test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Open_Cart_Regression_Test" class="hide-methods passed suite-Open_Cart_Regression_Test"> (hide)</a> <!-- hide-methods passed suite-Open_Cart_Regression_Test -->
+                      <a href="#" panel-name="suite-Open_Cart_Regression_Test" class="show-methods passed suite-Open_Cart_Regression_Test"> (show)</a> <!-- show-methods passed suite-Open_Cart_Regression_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-Open_Cart_Regression_Test">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="accPageHeadersTest">accPageHeadersTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="accountPageTitleTest">accountPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="accountPageUrlTest">accountPageUrlTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.LoginTest" hash-for-method="doLogin">doLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.ProductPageTest" hash-for-method="getProductImageCountTest(Macbook, MacBook Pro, 4)">getProductImageCountTest(Macbook, MacBook Pro, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.ProductPageTest" hash-for-method="getProductImageCountTest(Samsung, Samsung Galaxy Tab 10.1, 7)">getProductImageCountTest(Samsung, Samsung Galaxy Tab 10.1, 7)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.ProductPageTest" hash-for-method="getProductImageCountTest(iMac, iMac, 3)">getProductImageCountTest(iMac, iMac, 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.LoginTest" hash-for-method="isForgotPasswordLinkExists">isForgotPasswordLinkExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="isSearchBarExistTest">isSearchBarExistTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.LoginTest" hash-for-method="openCartLoginTest">openCartLoginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.ProductPageTest" hash-for-method="productHeaderTest">productHeaderTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.ProductPageTest" hash-for-method="productHeaderTest(Macbook, MacBook Pro)">productHeaderTest(Macbook, MacBook Pro)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.ProductPageTest" hash-for-method="productHeaderTest">productHeaderTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.ProductPageTest" hash-for-method="productHeaderTest(Samsung, Samsung Galaxy Tab 10.1)">productHeaderTest(Samsung, Samsung Galaxy Tab 10.1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.ProductPageTest" hash-for-method="productHeaderTest">productHeaderTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.ProductPageTest" hash-for-method="productHeaderTest(iMac, iMac)">productHeaderTest(iMac, iMac)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.ProductPageTest" hash-for-method="productMetaDataTest">productMetaDataTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.ProductPageTest" hash-for-method="productPriceMetaDataTest">productPriceMetaDataTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest">registerUserTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest(test3, Ranjan, nitya2@gmail.com, 730389737, nilamani12, yes)">registerUserTest(test3, Ranjan, nitya2@gmail.com, 730389737, nilamani12, yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest">registerUserTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest(test9, Ranjan, nitya8@gmail.com, 730389743, nilamani18, yes)">registerUserTest(test9, Ranjan, nitya8@gmail.com, 730389743, nilamani18, yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest">registerUserTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest(test4, Ranjan, nitya3@gmail.com, 730389738, nilamani13, yes)">registerUserTest(test4, Ranjan, nitya3@gmail.com, 730389738, nilamani13, yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest">registerUserTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest(test1, Ranjan, nitya@gmail.com, 730389735, nilamani10, yes)">registerUserTest(test1, Ranjan, nitya@gmail.com, 730389735, nilamani10, yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest">registerUserTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest(test6, Ranjan, nitya5@gmail.com, 730389740, nilamani15, yes)">registerUserTest(test6, Ranjan, nitya5@gmail.com, 730389740, nilamani15, yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest">registerUserTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest(test5, Ranjan, nitya4@gmail.com, 730389739, nilamani14, yes)">registerUserTest(test5, Ranjan, nitya4@gmail.com, 730389739, nilamani14, yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest">registerUserTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest(test7, Ranjan, nitya6@gmail.com, 730389741, nilamani16, yes)">registerUserTest(test7, Ranjan, nitya6@gmail.com, 730389741, nilamani16, yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest">registerUserTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest(test8, Ranjan, nitya7@gmail.com, 730389742, nilamani17, yes)">registerUserTest(test8, Ranjan, nitya7@gmail.com, 730389742, nilamani17, yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest">registerUserTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest(test10, Ranjan, nitya9@gmail.com, 730389744, nilamani19, yes)">registerUserTest(test10, Ranjan, nitya9@gmail.com, 730389744, nilamani19, yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest">registerUserTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest(test2, Ranjan, nitya1@gmail.com, 730389736, nilamani11, yes)">registerUserTest(test2, Ranjan, nitya1@gmail.com, 730389736, nilamani11, yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest">registerUserTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.RegisterTest" hash-for-method="registerUserTest(test11, Ranjan, nitya10@gmail.com, 730389745, nilamani20, yes)">registerUserTest(test11, Ranjan, nitya10@gmail.com, 730389745, nilamani20, yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="searchCheckTest">searchCheckTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="searchCheckTest(Macbook)">searchCheckTest(Macbook)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="searchCheckTest">searchCheckTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="searchCheckTest(Samsung)">searchCheckTest(Samsung)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="searchCheckTest">searchCheckTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="searchCheckTest(iMac)">searchCheckTest(iMac)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="searchTest">searchTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="searchTest(Macbook, MacBook Pro)">searchTest(Macbook, MacBook Pro)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="searchTest">searchTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="searchTest(iMac, iMac)">searchTest(iMac, iMac)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="searchTest">searchTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Open_Cart_Regression_Test" title="com.qa.opencart.tests.AccountPageTest" hash-for-method="searchTest(Samsung, Samsung Galaxy Tab 10.1)">searchTest(Samsung, Samsung Galaxy Tab 10.1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Open_Cart_Regression_Test -->
+                    </div> <!-- method-list-content passed suite-Open_Cart_Regression_Test -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -277,190 +310,31 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Open_Cart_Regression_Test" class="panel Open_Cart_Regression_Test">
-          <div class="suite-Open_Cart_Regression_Test-class-skipped">
+          <div class="suite-Open_Cart_Regression_Test-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.qa.opencart.tests.RegisterTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.opencart.tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="registerUserTest">
-                  </a> <!-- registerUserTest -->
-                  <span class="method-name">registerUserTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+                  <a name="openCartLoginPageUrlTest">
+                  </a> <!-- openCartLoginPageUrlTest -->
+                  <span class="method-name">openCartLoginPageUrlTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://naveenautomationlabs.com/opencart/index.php?route=account/login1] but found [https://naveenautomationlabs.com/opencart/index.php?route=account/login]
+	at com.qa.opencart.tests.LoginTest.openCartLoginPageUrlTest(LoginTest.java:33)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
+... Removed 22 stack frames
 </div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerUserTest">
-                  </a> <!-- registerUserTest -->
-                  <span class="method-name">registerUserTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerUserTest">
-                  </a> <!-- registerUserTest -->
-                  <span class="method-name">registerUserTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerUserTest">
-                  </a> <!-- registerUserTest -->
-                  <span class="method-name">registerUserTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerUserTest">
-                  </a> <!-- registerUserTest -->
-                  <span class="method-name">registerUserTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerUserTest">
-                  </a> <!-- registerUserTest -->
-                  <span class="method-name">registerUserTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerUserTest">
-                  </a> <!-- registerUserTest -->
-                  <span class="method-name">registerUserTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerUserTest">
-                  </a> <!-- registerUserTest -->
-                  <span class="method-name">registerUserTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerUserTest">
-                  </a> <!-- registerUserTest -->
-                  <span class="method-name">registerUserTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerUserTest">
-                  </a> <!-- registerUserTest -->
-                  <span class="method-name">registerUserTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerUserTest">
-                  </a> <!-- registerUserTest -->
-                  <span class="method-name">registerUserTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
+                  <em>
+(Url Test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Open_Cart_Regression_Test-class-skipped -->
+          </div> <!-- suite-Open_Cart_Regression_Test-class-failed -->
           <div class="suite-Open_Cart_Regression_Test-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -469,53 +343,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="doLogin">
-                  </a> <!-- doLogin -->
-                  <span class="method-name">doLogin</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Login Test)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="isForgotPasswordLinkExists">
-                  </a> <!-- isForgotPasswordLinkExists -->
-                  <span class="method-name">isForgotPasswordLinkExists</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Forgot password Test)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="openCartLoginPageUrlTest">
                   </a> <!-- openCartLoginPageUrlTest -->
                   <span class="method-name">openCartLoginPageUrlTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://naveenautomationlabs.com/opencart/index.php?route=account/login1] but found [https://naveenautomationlabs.com/opencart/index.php?route=account/login]
+	at com.qa.opencart.tests.LoginTest.openCartLoginPageUrlTest(LoginTest.java:33)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
+... Removed 22 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Url Test)                  </em>
@@ -523,134 +360,102 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="openCartLoginTest">
-                  </a> <!-- openCartLoginTest -->
-                  <span class="method-name">openCartLoginTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
+                  <a name="openCartLoginPageUrlTest">
+                  </a> <!-- openCartLoginPageUrlTest -->
+                  <span class="method-name">openCartLoginPageUrlTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://naveenautomationlabs.com/opencart/index.php?route=account/login1] but found [https://naveenautomationlabs.com/opencart/index.php?route=account/login]
+	at com.qa.opencart.tests.LoginTest.openCartLoginPageUrlTest(LoginTest.java:33)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
+... Removed 22 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Title Test)                  </em>
+(Url Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openCartLoginPageUrlTest">
+                  </a> <!-- openCartLoginPageUrlTest -->
+                  <span class="method-name">openCartLoginPageUrlTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://naveenautomationlabs.com/opencart/index.php?route=account/login1] but found [https://naveenautomationlabs.com/opencart/index.php?route=account/login]
+	at com.qa.opencart.tests.LoginTest.openCartLoginPageUrlTest(LoginTest.java:33)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Url Test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Open_Cart_Regression_Test-class-skipped -->
-          <div class="suite-Open_Cart_Regression_Test-class-skipped">
+          <div class="suite-Open_Cart_Regression_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.qa.opencart.tests.ProductPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getProductImageCountTest">
-                  </a> <!-- getProductImageCountTest -->
+                  <a name="getProductImageCountTest(Macbook, MacBook Pro, 4)">
+                  </a> <!-- getProductImageCountTest(Macbook, MacBook Pro, 4) -->
                   <span class="method-name">getProductImageCountTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(Macbook, MacBook Pro, 4)</span>
                   <em>
 (Product Image Count Test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="getProductImageCountTest">
-                  </a> <!-- getProductImageCountTest -->
+                  <a name="getProductImageCountTest(Samsung, Samsung Galaxy Tab 10.1, 7)">
+                  </a> <!-- getProductImageCountTest(Samsung, Samsung Galaxy Tab 10.1, 7) -->
                   <span class="method-name">getProductImageCountTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(Samsung, Samsung Galaxy Tab 10.1, 7)</span>
                   <em>
 (Product Image Count Test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="getProductImageCountTest">
-                  </a> <!-- getProductImageCountTest -->
+                  <a name="getProductImageCountTest(iMac, iMac, 3)">
+                  </a> <!-- getProductImageCountTest(iMac, iMac, 3) -->
                   <span class="method-name">getProductImageCountTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(iMac, iMac, 3)</span>
                   <em>
 (Product Image Count Test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="productHeaderTest">
-                  </a> <!-- productHeaderTest -->
+                  <a name="productHeaderTest(Macbook, MacBook Pro)">
+                  </a> <!-- productHeaderTest(Macbook, MacBook Pro) -->
                   <span class="method-name">productHeaderTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(Macbook, MacBook Pro)</span>
                   <em>
 (Product Header Test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="productHeaderTest">
-                  </a> <!-- productHeaderTest -->
+                  <a name="productHeaderTest(Samsung, Samsung Galaxy Tab 10.1)">
+                  </a> <!-- productHeaderTest(Samsung, Samsung Galaxy Tab 10.1) -->
                   <span class="method-name">productHeaderTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(Samsung, Samsung Galaxy Tab 10.1)</span>
                   <em>
 (Product Header Test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="productHeaderTest">
-                  </a> <!-- productHeaderTest -->
+                  <a name="productHeaderTest(iMac, iMac)">
+                  </a> <!-- productHeaderTest(iMac, iMac) -->
                   <span class="method-name">productHeaderTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(iMac, iMac)</span>
                   <em>
 (Product Header Test)                  </em>
                 </div> <!-- method-content -->
@@ -660,15 +465,6 @@
                   <a name="productMetaDataTest">
                   </a> <!-- productMetaDataTest -->
                   <span class="method-name">productMetaDataTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Product MetaData Test)                  </em>
                 </div> <!-- method-content -->
@@ -678,24 +474,15 @@
                   <a name="productPriceMetaDataTest">
                   </a> <!-- productPriceMetaDataTest -->
                   <span class="method-name">productPriceMetaDataTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Product Price MetaData Test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Open_Cart_Regression_Test-class-skipped -->
-          <div class="suite-Open_Cart_Regression_Test-class-skipped">
+          </div> <!-- suite-Open_Cart_Regression_Test-class-passed -->
+          <div class="suite-Open_Cart_Regression_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.qa.opencart.tests.AccountPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -704,15 +491,6 @@
                   <a name="accPageHeadersTest">
                   </a> <!-- accPageHeadersTest -->
                   <span class="method-name">accPageHeadersTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Account Page Headers Test)                  </em>
                 </div> <!-- method-content -->
@@ -722,15 +500,6 @@
                   <a name="accountPageTitleTest">
                   </a> <!-- accountPageTitleTest -->
                   <span class="method-name">accountPageTitleTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Account Page Title Test)                  </em>
                 </div> <!-- method-content -->
@@ -740,15 +509,6 @@
                   <a name="accountPageUrlTest">
                   </a> <!-- accountPageUrlTest -->
                   <span class="method-name">accountPageUrlTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Account Page url Test)                  </em>
                 </div> <!-- method-content -->
@@ -758,129 +518,203 @@
                   <a name="isSearchBarExistTest">
                   </a> <!-- isSearchBarExistTest -->
                   <span class="method-name">isSearchBarExistTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Searchbar exists or not Test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="searchCheckTest">
-                  </a> <!-- searchCheckTest -->
+                  <a name="searchCheckTest(Macbook)">
+                  </a> <!-- searchCheckTest(Macbook) -->
                   <span class="method-name">searchCheckTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(Macbook)</span>
                   <em>
 (Search Page Check Test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="searchCheckTest">
-                  </a> <!-- searchCheckTest -->
+                  <a name="searchCheckTest(Samsung)">
+                  </a> <!-- searchCheckTest(Samsung) -->
                   <span class="method-name">searchCheckTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(Samsung)</span>
                   <em>
 (Search Page Check Test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="searchCheckTest">
-                  </a> <!-- searchCheckTest -->
+                  <a name="searchCheckTest(iMac)">
+                  </a> <!-- searchCheckTest(iMac) -->
                   <span class="method-name">searchCheckTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(iMac)</span>
                   <em>
 (Search Page Check Test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="searchTest">
-                  </a> <!-- searchTest -->
+                  <a name="searchTest(Macbook, MacBook Pro)">
+                  </a> <!-- searchTest(Macbook, MacBook Pro) -->
                   <span class="method-name">searchTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(Macbook, MacBook Pro)</span>
                   <em>
 (Search Macbookpro )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="searchTest">
-                  </a> <!-- searchTest -->
+                  <a name="searchTest(iMac, iMac)">
+                  </a> <!-- searchTest(iMac, iMac) -->
                   <span class="method-name">searchTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(iMac, iMac)</span>
                   <em>
 (Search Macbookpro )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="searchTest">
-                  </a> <!-- searchTest -->
+                  <a name="searchTest(Samsung, Samsung Galaxy Tab 10.1)">
+                  </a> <!-- searchTest(Samsung, Samsung Galaxy Tab 10.1) -->
                   <span class="method-name">searchTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:68)
-	at com.qa.opencart.base.BaseTest.setup(BaseTest.java:31)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(Samsung, Samsung Galaxy Tab 10.1)</span>
                   <em>
 (Search Macbookpro )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Open_Cart_Regression_Test-class-skipped -->
+          </div> <!-- suite-Open_Cart_Regression_Test-class-passed -->
+          <div class="suite-Open_Cart_Regression_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.opencart.tests.RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUserTest(test3, Ranjan, nitya2@gmail.com, 730389737, nilamani12, yes)">
+                  </a> <!-- registerUserTest(test3, Ranjan, nitya2@gmail.com, 730389737, nilamani12, yes) -->
+                  <span class="method-name">registerUserTest</span>
+                  <span class="parameters">(test3, Ranjan, nitya2@gmail.com, 730389737, nilamani12, yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUserTest(test9, Ranjan, nitya8@gmail.com, 730389743, nilamani18, yes)">
+                  </a> <!-- registerUserTest(test9, Ranjan, nitya8@gmail.com, 730389743, nilamani18, yes) -->
+                  <span class="method-name">registerUserTest</span>
+                  <span class="parameters">(test9, Ranjan, nitya8@gmail.com, 730389743, nilamani18, yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUserTest(test4, Ranjan, nitya3@gmail.com, 730389738, nilamani13, yes)">
+                  </a> <!-- registerUserTest(test4, Ranjan, nitya3@gmail.com, 730389738, nilamani13, yes) -->
+                  <span class="method-name">registerUserTest</span>
+                  <span class="parameters">(test4, Ranjan, nitya3@gmail.com, 730389738, nilamani13, yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUserTest(test1, Ranjan, nitya@gmail.com, 730389735, nilamani10, yes)">
+                  </a> <!-- registerUserTest(test1, Ranjan, nitya@gmail.com, 730389735, nilamani10, yes) -->
+                  <span class="method-name">registerUserTest</span>
+                  <span class="parameters">(test1, Ranjan, nitya@gmail.com, 730389735, nilamani10, yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUserTest(test6, Ranjan, nitya5@gmail.com, 730389740, nilamani15, yes)">
+                  </a> <!-- registerUserTest(test6, Ranjan, nitya5@gmail.com, 730389740, nilamani15, yes) -->
+                  <span class="method-name">registerUserTest</span>
+                  <span class="parameters">(test6, Ranjan, nitya5@gmail.com, 730389740, nilamani15, yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUserTest(test5, Ranjan, nitya4@gmail.com, 730389739, nilamani14, yes)">
+                  </a> <!-- registerUserTest(test5, Ranjan, nitya4@gmail.com, 730389739, nilamani14, yes) -->
+                  <span class="method-name">registerUserTest</span>
+                  <span class="parameters">(test5, Ranjan, nitya4@gmail.com, 730389739, nilamani14, yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUserTest(test7, Ranjan, nitya6@gmail.com, 730389741, nilamani16, yes)">
+                  </a> <!-- registerUserTest(test7, Ranjan, nitya6@gmail.com, 730389741, nilamani16, yes) -->
+                  <span class="method-name">registerUserTest</span>
+                  <span class="parameters">(test7, Ranjan, nitya6@gmail.com, 730389741, nilamani16, yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUserTest(test8, Ranjan, nitya7@gmail.com, 730389742, nilamani17, yes)">
+                  </a> <!-- registerUserTest(test8, Ranjan, nitya7@gmail.com, 730389742, nilamani17, yes) -->
+                  <span class="method-name">registerUserTest</span>
+                  <span class="parameters">(test8, Ranjan, nitya7@gmail.com, 730389742, nilamani17, yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUserTest(test10, Ranjan, nitya9@gmail.com, 730389744, nilamani19, yes)">
+                  </a> <!-- registerUserTest(test10, Ranjan, nitya9@gmail.com, 730389744, nilamani19, yes) -->
+                  <span class="method-name">registerUserTest</span>
+                  <span class="parameters">(test10, Ranjan, nitya9@gmail.com, 730389744, nilamani19, yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUserTest(test2, Ranjan, nitya1@gmail.com, 730389736, nilamani11, yes)">
+                  </a> <!-- registerUserTest(test2, Ranjan, nitya1@gmail.com, 730389736, nilamani11, yes) -->
+                  <span class="method-name">registerUserTest</span>
+                  <span class="parameters">(test2, Ranjan, nitya1@gmail.com, 730389736, nilamani11, yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUserTest(test11, Ranjan, nitya10@gmail.com, 730389745, nilamani20, yes)">
+                  </a> <!-- registerUserTest(test11, Ranjan, nitya10@gmail.com, 730389745, nilamani20, yes) -->
+                  <span class="method-name">registerUserTest</span>
+                  <span class="parameters">(test11, Ranjan, nitya10@gmail.com, 730389745, nilamani20, yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Open_Cart_Regression_Test-class-passed -->
+          <div class="suite-Open_Cart_Regression_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.opencart.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin">
+                  </a> <!-- doLogin -->
+                  <span class="method-name">doLogin</span>
+                  <em>
+(Login Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isForgotPasswordLinkExists">
+                  </a> <!-- isForgotPasswordLinkExists -->
+                  <span class="method-name">isForgotPasswordLinkExists</span>
+                  <em>
+(Forgot password Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openCartLoginTest">
+                  </a> <!-- openCartLoginTest -->
+                  <span class="method-name">openCartLoginTest</span>
+                  <em>
+(Title Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Open_Cart_Regression_Test-class-passed -->
         </div> <!-- panel Open_Cart_Regression_Test -->
         <div panel-name="test-xml-Open_Cart_Regression_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -962,144 +796,156 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(33);
+data.addRows(36);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'openCartLoginTest')
-data.setCell(0, 2, 'com.qa.opencart.tests.LoginTest')
-data.setCell(0, 3, 1);
+data.setCell(0, 1, 'registerUserTest')
+data.setCell(0, 2, 'com.qa.opencart.tests.RegisterTest')
+data.setCell(0, 3, 14740);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'searchCheckTest')
-data.setCell(1, 2, 'com.qa.opencart.tests.AccountPageTest')
-data.setCell(1, 3, 1);
+data.setCell(1, 1, 'registerUserTest')
+data.setCell(1, 2, 'com.qa.opencart.tests.RegisterTest')
+data.setCell(1, 3, 13220);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'accountPageTitleTest')
-data.setCell(2, 2, 'com.qa.opencart.tests.AccountPageTest')
-data.setCell(2, 3, 1);
+data.setCell(2, 1, 'productHeaderTest')
+data.setCell(2, 2, 'com.qa.opencart.tests.ProductPageTest')
+data.setCell(2, 3, 12297);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'productHeaderTest')
-data.setCell(3, 2, 'com.qa.opencart.tests.ProductPageTest')
-data.setCell(3, 3, 1);
+data.setCell(3, 1, 'registerUserTest')
+data.setCell(3, 2, 'com.qa.opencart.tests.RegisterTest')
+data.setCell(3, 3, 11116);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'openCartLoginPageUrlTest')
-data.setCell(4, 2, 'com.qa.opencart.tests.LoginTest')
-data.setCell(4, 3, 0);
+data.setCell(4, 1, 'productHeaderTest')
+data.setCell(4, 2, 'com.qa.opencart.tests.ProductPageTest')
+data.setCell(4, 3, 10417);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'isForgotPasswordLinkExists')
-data.setCell(5, 2, 'com.qa.opencart.tests.LoginTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 1, 'searchTest')
+data.setCell(5, 2, 'com.qa.opencart.tests.AccountPageTest')
+data.setCell(5, 3, 8830);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'doLogin')
-data.setCell(6, 2, 'com.qa.opencart.tests.LoginTest')
-data.setCell(6, 3, 0);
+data.setCell(6, 1, 'getProductImageCountTest')
+data.setCell(6, 2, 'com.qa.opencart.tests.ProductPageTest')
+data.setCell(6, 3, 8542);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'searchTest')
-data.setCell(7, 2, 'com.qa.opencart.tests.AccountPageTest')
-data.setCell(7, 3, 0);
+data.setCell(7, 1, 'registerUserTest')
+data.setCell(7, 2, 'com.qa.opencart.tests.RegisterTest')
+data.setCell(7, 3, 8000);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'accountPageUrlTest')
+data.setCell(8, 1, 'searchCheckTest')
 data.setCell(8, 2, 'com.qa.opencart.tests.AccountPageTest')
-data.setCell(8, 3, 0);
+data.setCell(8, 3, 7738);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'searchTest')
-data.setCell(9, 2, 'com.qa.opencart.tests.AccountPageTest')
-data.setCell(9, 3, 0);
+data.setCell(9, 1, 'registerUserTest')
+data.setCell(9, 2, 'com.qa.opencart.tests.RegisterTest')
+data.setCell(9, 3, 7436);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'accPageHeadersTest')
-data.setCell(10, 2, 'com.qa.opencart.tests.AccountPageTest')
-data.setCell(10, 3, 0);
+data.setCell(10, 1, 'registerUserTest')
+data.setCell(10, 2, 'com.qa.opencart.tests.RegisterTest')
+data.setCell(10, 3, 6456);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'searchCheckTest')
-data.setCell(11, 2, 'com.qa.opencart.tests.AccountPageTest')
-data.setCell(11, 3, 0);
+data.setCell(11, 1, 'registerUserTest')
+data.setCell(11, 2, 'com.qa.opencart.tests.RegisterTest')
+data.setCell(11, 3, 6237);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'searchCheckTest')
+data.setCell(12, 1, 'searchTest')
 data.setCell(12, 2, 'com.qa.opencart.tests.AccountPageTest')
-data.setCell(12, 3, 0);
+data.setCell(12, 3, 6152);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'searchTest')
-data.setCell(13, 2, 'com.qa.opencart.tests.AccountPageTest')
-data.setCell(13, 3, 0);
+data.setCell(13, 1, 'registerUserTest')
+data.setCell(13, 2, 'com.qa.opencart.tests.RegisterTest')
+data.setCell(13, 3, 6113);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'isSearchBarExistTest')
-data.setCell(14, 2, 'com.qa.opencart.tests.AccountPageTest')
-data.setCell(14, 3, 0);
+data.setCell(14, 1, 'registerUserTest')
+data.setCell(14, 2, 'com.qa.opencart.tests.RegisterTest')
+data.setCell(14, 3, 5995);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'productHeaderTest')
-data.setCell(15, 2, 'com.qa.opencart.tests.ProductPageTest')
-data.setCell(15, 3, 0);
+data.setCell(15, 1, 'registerUserTest')
+data.setCell(15, 2, 'com.qa.opencart.tests.RegisterTest')
+data.setCell(15, 3, 5570);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'productPriceMetaDataTest')
-data.setCell(16, 2, 'com.qa.opencart.tests.ProductPageTest')
-data.setCell(16, 3, 0);
+data.setCell(16, 1, 'registerUserTest')
+data.setCell(16, 2, 'com.qa.opencart.tests.RegisterTest')
+data.setCell(16, 3, 5367);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'productHeaderTest')
-data.setCell(17, 2, 'com.qa.opencart.tests.ProductPageTest')
-data.setCell(17, 3, 0);
+data.setCell(17, 1, 'searchTest')
+data.setCell(17, 2, 'com.qa.opencart.tests.AccountPageTest')
+data.setCell(17, 3, 4364);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'getProductImageCountTest')
+data.setCell(18, 1, 'productMetaDataTest')
 data.setCell(18, 2, 'com.qa.opencart.tests.ProductPageTest')
-data.setCell(18, 3, 0);
+data.setCell(18, 3, 3576);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'productMetaDataTest')
+data.setCell(19, 1, 'productHeaderTest')
 data.setCell(19, 2, 'com.qa.opencart.tests.ProductPageTest')
-data.setCell(19, 3, 0);
+data.setCell(19, 3, 2996);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'getProductImageCountTest')
 data.setCell(20, 2, 'com.qa.opencart.tests.ProductPageTest')
-data.setCell(20, 3, 0);
+data.setCell(20, 3, 2969);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'getProductImageCountTest')
+data.setCell(21, 1, 'productPriceMetaDataTest')
 data.setCell(21, 2, 'com.qa.opencart.tests.ProductPageTest')
-data.setCell(21, 3, 0);
+data.setCell(21, 3, 2953);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'registerUserTest')
-data.setCell(22, 2, 'com.qa.opencart.tests.RegisterTest')
-data.setCell(22, 3, 0);
+data.setCell(22, 1, 'searchCheckTest')
+data.setCell(22, 2, 'com.qa.opencart.tests.AccountPageTest')
+data.setCell(22, 3, 2626);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'registerUserTest')
-data.setCell(23, 2, 'com.qa.opencart.tests.RegisterTest')
-data.setCell(23, 3, 0);
+data.setCell(23, 1, 'getProductImageCountTest')
+data.setCell(23, 2, 'com.qa.opencart.tests.ProductPageTest')
+data.setCell(23, 3, 2455);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'registerUserTest')
-data.setCell(24, 2, 'com.qa.opencart.tests.RegisterTest')
-data.setCell(24, 3, 0);
+data.setCell(24, 1, 'searchCheckTest')
+data.setCell(24, 2, 'com.qa.opencart.tests.AccountPageTest')
+data.setCell(24, 3, 1876);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'registerUserTest')
-data.setCell(25, 2, 'com.qa.opencart.tests.RegisterTest')
-data.setCell(25, 3, 0);
+data.setCell(25, 1, 'doLogin')
+data.setCell(25, 2, 'com.qa.opencart.tests.LoginTest')
+data.setCell(25, 3, 1833);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'registerUserTest')
-data.setCell(26, 2, 'com.qa.opencart.tests.RegisterTest')
-data.setCell(26, 3, 0);
+data.setCell(26, 1, 'accPageHeadersTest')
+data.setCell(26, 2, 'com.qa.opencart.tests.AccountPageTest')
+data.setCell(26, 3, 145);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'registerUserTest')
-data.setCell(27, 2, 'com.qa.opencart.tests.RegisterTest')
-data.setCell(27, 3, 0);
+data.setCell(27, 1, 'isForgotPasswordLinkExists')
+data.setCell(27, 2, 'com.qa.opencart.tests.LoginTest')
+data.setCell(27, 3, 94);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'registerUserTest')
-data.setCell(28, 2, 'com.qa.opencart.tests.RegisterTest')
-data.setCell(28, 3, 0);
+data.setCell(28, 1, 'isSearchBarExistTest')
+data.setCell(28, 2, 'com.qa.opencart.tests.AccountPageTest')
+data.setCell(28, 3, 60);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'registerUserTest')
-data.setCell(29, 2, 'com.qa.opencart.tests.RegisterTest')
-data.setCell(29, 3, 0);
+data.setCell(29, 1, 'openCartLoginPageUrlTest')
+data.setCell(29, 2, 'com.qa.opencart.tests.LoginTest')
+data.setCell(29, 3, 47);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'registerUserTest')
-data.setCell(30, 2, 'com.qa.opencart.tests.RegisterTest')
-data.setCell(30, 3, 0);
+data.setCell(30, 1, 'openCartLoginTest')
+data.setCell(30, 2, 'com.qa.opencart.tests.LoginTest')
+data.setCell(30, 3, 45);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'registerUserTest')
-data.setCell(31, 2, 'com.qa.opencart.tests.RegisterTest')
-data.setCell(31, 3, 0);
+data.setCell(31, 1, 'openCartLoginPageUrlTest')
+data.setCell(31, 2, 'com.qa.opencart.tests.LoginTest')
+data.setCell(31, 3, 36);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'registerUserTest')
-data.setCell(32, 2, 'com.qa.opencart.tests.RegisterTest')
-data.setCell(32, 3, 0);
+data.setCell(32, 1, 'accountPageTitleTest')
+data.setCell(32, 2, 'com.qa.opencart.tests.AccountPageTest')
+data.setCell(32, 3, 36);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'openCartLoginPageUrlTest')
+data.setCell(33, 2, 'com.qa.opencart.tests.LoginTest')
+data.setCell(33, 3, 30);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'accountPageUrlTest')
+data.setCell(34, 2, 'com.qa.opencart.tests.AccountPageTest')
+data.setCell(34, 3, 29);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'openCartLoginPageUrlTest')
+data.setCell(35, 2, 'com.qa.opencart.tests.LoginTest')
+data.setCell(35, 3, 26);
 window.suiteTableData['Open_Cart_Regression_Test']= { tableData: data, tableDiv: 'times-div-Open_Cart_Regression_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 ms</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Open_Cart_Regression_Test">
               </div> <!-- times-div-Open_Cart_Regression_Test -->
             </div> <!-- times-div -->
@@ -1127,8 +973,6 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.opencart.tests.AccountPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
@@ -1136,17 +980,6 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.opencart.tests.ProductPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.opencart.tests.RegisterTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
@@ -1154,11 +987,271 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.opencart.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">registrationSetup</span>
+                <span class="method-start">10983 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.AccountPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">accSetup</span>
+                <span class="method-start">14833 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">registerUserTest(test1, Ranjan, nitya@gmail.com, 730389735, nilamani10, yes)</span>
+                <span class="method-start">14981 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">productInfoSetup</span>
+                <span class="method-start">15172 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openCartLoginTest</span>
+                <span class="method-start">16959 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">openCartLoginPageUrlTest</span>
+                <span class="method-start">17233 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">openCartLoginPageUrlTest</span>
+                <span class="method-start">17568 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">productHeaderTest(Macbook, MacBook Pro)</span>
+                <span class="method-start">17700 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openCartLoginPageUrlTest</span>
+                <span class="method-start">17856 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">openCartLoginPageUrlTest</span>
+                <span class="method-start">18137 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">isForgotPasswordLinkExists</span>
+                <span class="method-start">18664 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doLogin</span>
+                <span class="method-start">18764 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.AccountPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">accountPageTitleTest</span>
+                <span class="method-start">19545 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">accountPageUrlTest</span>
+                <span class="method-start">19587 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">isSearchBarExistTest</span>
+                <span class="method-start">19621 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">accPageHeadersTest</span>
+                <span class="method-start">19688 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchCheckTest(Macbook)</span>
+                <span class="method-start">19838 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">20600 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.AccountPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchCheckTest(Samsung)</span>
+                <span class="method-start">22115 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">registerUserTest(test2, Ranjan, nitya1@gmail.com, 730389736, nilamani11, yes)</span>
+                <span class="method-start">26103 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.AccountPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchCheckTest(iMac)</span>
+                <span class="method-start">29861 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">productHeaderTest(Samsung, Samsung Galaxy Tab 10.1)</span>
+                <span class="method-start">30003 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.AccountPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchTest(Macbook, MacBook Pro)</span>
+                <span class="method-start">32494 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">registerUserTest(test3, Ranjan, nitya2@gmail.com, 730389737, nilamani12, yes)</span>
+                <span class="method-start">39332 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">productHeaderTest(iMac, iMac)</span>
+                <span class="method-start">40426 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.AccountPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchTest(Samsung, Samsung Galaxy Tab 10.1)</span>
+                <span class="method-start">41328 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getProductImageCountTest(Macbook, MacBook Pro, 4)</span>
+                <span class="method-start">43429 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">registerUserTest(test4, Ranjan, nitya3@gmail.com, 730389738, nilamani13, yes)</span>
+                <span class="method-start">45575 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getProductImageCountTest(Samsung, Samsung Galaxy Tab 10.1, 7)</span>
+                <span class="method-start">46402 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.AccountPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchTest(iMac, iMac)</span>
+                <span class="method-start">47482 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getProductImageCountTest(iMac, iMac, 3)</span>
+                <span class="method-start">48861 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">registerUserTest(test5, Ranjan, nitya4@gmail.com, 730389739, nilamani14, yes)</span>
+                <span class="method-start">51696 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.AccountPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">51855 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">productMetaDataTest</span>
+                <span class="method-start">57410 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">registerUserTest(test6, Ranjan, nitya5@gmail.com, 730389740, nilamani15, yes)</span>
+                <span class="method-start">58159 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">productPriceMetaDataTest</span>
+                <span class="method-start">60989 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63945 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.tests.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">registerUserTest(test7, Ranjan, nitya6@gmail.com, 730389741, nilamani16, yes)</span>
+                <span class="method-start">72907 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerUserTest(test8, Ranjan, nitya7@gmail.com, 730389742, nilamani17, yes)</span>
+                <span class="method-start">78910 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerUserTest(test9, Ranjan, nitya8@gmail.com, 730389743, nilamani18, yes)</span>
+                <span class="method-start">86916 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerUserTest(test10, Ranjan, nitya9@gmail.com, 730389744, nilamani19, yes)</span>
+                <span class="method-start">92289 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerUserTest(test11, Ranjan, nitya10@gmail.com, 730389745, nilamani20, yes)</span>
+                <span class="method-start">99730 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">105305 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
