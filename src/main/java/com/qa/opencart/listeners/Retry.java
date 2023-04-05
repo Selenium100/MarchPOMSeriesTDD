@@ -22,9 +22,11 @@ public class Retry implements IRetryAnalyzer {
 				return true; // Tells TestNG to re-run the test
 			} else {
 				iTestResult.setStatus(ITestResult.FAILURE); // If maxCount reached,test marked as failed
+				System.out.println("====>>>> Max retries are Completed and now testcase is failed ===>>>>");
 			}
 		} else {
 			iTestResult.setStatus(ITestResult.SUCCESS); // If test passes, TestNG marks it as passed
+			System.out.println("====>>>> After some reties testcase is passed now ===>>>>");
 		}
 		return false;
 		
