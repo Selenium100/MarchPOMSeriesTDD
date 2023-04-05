@@ -30,7 +30,7 @@ public class LoginTest extends BaseTest {
 	@Test(priority = 1, description = "Url Test")
 	public void openCartLoginPageUrlTest() {
 		String url = login.getLoginPageUrl();
-		Assert.assertEquals(url, "https://naveenautomationlabs.com/opencart/index.php?route=account/login1");
+		Assert.assertEquals(url, "https://naveenautomationlabs.com/opencart/index.php?route=account/login");
 	}
 	
 	@Description("Login page forget password link test...")
