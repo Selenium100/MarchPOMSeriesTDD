@@ -6,20 +6,6 @@
     <listener class-name="com.qa.opencart.listeners.TestAllureListener"/>
     <listener class-name="com.qa.opencart.listeners.AnnotationTransformer"/>
   </listeners>
-  <test name="Login Test(failed)" parallel="tests">
-    <classes>
-      <class name="com.qa.opencart.tests.LoginTest">
-        <methods>
-          <include name="doLogin"/>
-          <include name="openCartLoginTest"/>
-          <include name="openCartLoginPageUrlTest"/>
-          <include name="setup"/>
-          <include name="isForgotPasswordLinkExists"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.opencart.tests.LoginTest -->
-    </classes>
-  </test> <!-- Login Test(failed) -->
   <test name="Accounts Test(failed)" parallel="tests">
     <classes>
       <class name="com.qa.opencart.tests.AccountPageTest">
@@ -41,10 +27,7 @@
     <classes>
       <class name="com.qa.opencart.tests.ProductPageTest">
         <methods>
-          <include name="productPriceMetaDataTest"/>
-          <include name="productHeaderTest"/>
-          <include name="productMetaDataTest"/>
-          <include name="getProductImageCountTest"/>
+          <include name="productHeaderTest" invocation-numbers="2"/>
           <include name="setup"/>
           <include name="productInfoSetup"/>
           <include name="tearDown"/>
@@ -52,16 +35,4 @@
       </class> <!-- com.qa.opencart.tests.ProductPageTest -->
     </classes>
   </test> <!-- ProductPage Test(failed) -->
-  <test name="Register Test(failed)" parallel="tests">
-    <classes>
-      <class name="com.qa.opencart.tests.RegisterTest">
-        <methods>
-          <include name="registrationSetup"/>
-          <include name="registerUserTest"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.opencart.tests.RegisterTest -->
-    </classes>
-  </test> <!-- Register Test(failed) -->
 </suite> <!-- Failed suite [Open Cart Regression Test] -->

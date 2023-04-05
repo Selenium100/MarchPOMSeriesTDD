@@ -56,7 +56,7 @@ public class DriverFactory {
 		case "edge":
 			WebDriverManager.edgedriver().setup();
 			// driver=new EdgeDriver();
-			tl.set(new EdgeDriver());
+			tl.set(new EdgeDriver(option.getEdgeOptions()));
 			break;
 
 		default:
