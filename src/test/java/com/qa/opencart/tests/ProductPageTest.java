@@ -56,7 +56,7 @@ public class ProductPageTest extends BaseTest {
 		productInfo = searchResultPage.selectProduct(productSearch);
 		int actualImageCount = productInfo.getProductImageCount();
 		System.out.println("Actual Image count is : " +  actualImageCount);
-		Assert.assertEquals(actualImageCount, imageCount);
+		Assert.assertEquals(actualImageCount, imageCount, "Actual image and expected image count not matched");
 	}
 
 	@Test(priority = 2, description = "Product MetaData Test")

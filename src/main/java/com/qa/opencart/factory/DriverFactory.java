@@ -36,7 +36,8 @@ public class DriverFactory {
 	 * @return driver
 	 */
 	public WebDriver initDriver(Properties prop) {
-		String browser = prop.getProperty("browser").toLowerCase();
+		//String browser = prop.getProperty("browser").toLowerCase(); --->> Uncomment is if you want browsername from configfile
+		String browser = System.getProperty("browserName").toLowerCase();  // This line is to parameterize browsername from jenkins parameter
 		System.out.println("browser name is " + browser);
 		highlight = prop.getProperty("highlight");
 		option = new OptionsManager(prop);
