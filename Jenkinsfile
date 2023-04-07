@@ -21,7 +21,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/Selenium100/MarchPOMSeriesTDD.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=testng.xml"
+                    bat "mvn clean test -Dsurefire.suiteXmlFiles=testng_regression.xml"
                     
                 }
             }
