@@ -24,6 +24,7 @@ public class AccountPageTest extends BaseTest {
 	@Test(priority = 0, description = "Account Page Title Test")
 	public void accountPageTitleTest() {
 		String title = account.getAccountsPageTitle();
+		System.out.println("Account page Title is " + title);
 		Assert.assertEquals(title, AppConstants.ACC_PAGE_TITLE);
 	}
 	
