@@ -35,41 +35,59 @@ public class DriverFactory {
 	 * @return driver
 	 */
 	public WebDriver initDriver(Properties prop) {
-		String browser = prop.getProperty("browser").toLowerCase(); //--->> Uncomment is if you want browsername from configfile
-		//String browser = System.getProperty("browserName").toLowerCase();  // This line is to parameterize browsername from jenkins parameter
+		String browser = prop.getProperty("browser").toLowerCase(); // --->> Uncomment is if you want browsername from
+																	// configfile
+		// String browser = System.getProperty("browserName").toLowerCase(); // This
+		// line is to parameterize browsername from jenkins parameter
 		System.out.println("browser name is " + browser);
 		highlight = prop.getProperty("highlight");
 		option = new OptionsManager(prop);
 		browser = browser.toLowerCase();
 		switch (browser) {
 		case "chrome":
-			WebDriverManager.chromedriver().setup();
-			//tl.set(new ChromeDriver(option.getChromeOptions()));
-			DesiredCapabilities cap = new DesiredCapabilities();
-			cap.setCapability("browserName", "chrome");
-			try {
-				tl.set(new RemoteWebDriver(new URL("http://192.168.240.1:4444/wd/hub"), cap));
-			} catch (MalformedURLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			if (Boolean.parseBoolean(prop.getProperty("remoteexecution"))) {
+				// remote execution
+				init_remoteDriver("chrome");
+			} else {
+				// local execution
+				WebDriverManager.chromedriver().setup();
+				tl.set(new ChromeDriver(option.getChromeOptions()));
 			}
+
 			break;
 
 		case "ff":
-			WebDriverManager.firefoxdriver().setup();
-			// driver=new FirefoxDriver();
-			tl.set(new FirefoxDriver(option.getFirefoxOptions()));
+			if (Boolean.parseBoolean(prop.getProperty("remoteexecution"))) {
+				// remote execution
+				init_remoteDriver("ff");
+			} else {
+				// local execution
+				WebDriverManager.firefoxdriver().setup();
+				// driver=new FirefoxDriver();
+				tl.set(new FirefoxDriver(option.getFirefoxOptions()));
+
+			}
+
 			break;
 
 		case "edge":
-			WebDriverManager.edgedriver().setup();
-			// driver=new EdgeDriver();
-			tl.set(new EdgeDriver(option.getEdgeOptions()));
+
+			if (Boolean.parseBoolean(prop.getProperty("remoteexecution"))) {
+				// remote execution
+				init_remoteDriver("edge");
+			} else {
+				// local execution
+				WebDriverManager.edgedriver().setup();
+				// driver=new EdgeDriver();
+				tl.set(new EdgeDriver(option.getEdgeOptions()));
+			}
+
 			break;
 
 		default:
 			System.out.println("Please provide correct browser name.." + browser);
-			//throw new FrameworkException("Please provide correct browser name.." + browser);
+			// throw new FrameworkException("Please provide correct browser name.." +
+			// browser);
 			break;
 		}
 
@@ -78,6 +96,37 @@ public class DriverFactory {
 		getDriver().get(prop.getProperty("url"));
 
 		return getDriver();
+	}
+
+	private void init_remoteDriver(String browser) {
+		
+		System.out.println("*********Running scripts on remote GRID machine with browser: " + browser);
+		if (browser.equalsIgnoreCase("chrome")) {
+			try {
+				tl.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), option.getChromeOptions()));
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} else if (browser.equalsIgnoreCase("edge")) {
+			try {
+				tl.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), option.getEdgeOptions()));
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} else if (browser.equalsIgnoreCase("ff")) {
+			try {
+				tl.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), option.getFirefoxOptions()));
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} else {
+			System.out.println(
+					"==========>>> Please pass the right browser for remote execution.. ===========>>>>>" + browser);
+		}
+
 	}
 
 	public static synchronized WebDriver getDriver() {
@@ -93,7 +142,7 @@ public class DriverFactory {
 		prop = new Properties();
 		FileInputStream fis = null;
 
-		//String envName = System.getenv("env");
+		// String envName = System.getenv("env");
 		String envName = System.getProperty("env");
 		System.out.println("----->>> Running testcases on environment " + envName);
 
@@ -156,10 +205,10 @@ public class DriverFactory {
 		return prop;
 
 	}
-	
-	
+
 	/**
 	 * Get Screenshot
+	 * 
 	 * @return
 	 */
 	public static String getScreenshot() {
