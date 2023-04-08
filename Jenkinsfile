@@ -21,7 +21,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/Selenium100/MarchPOMSeriesTDD.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=testng_regression.xml"
+                    bat "mvn clean test -Dsurefire.suiteXmlFiles=testng_regression.xml -Denv=${envName}"
                     
                 }
             }
@@ -65,7 +65,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/Selenium100/MarchPOMSeriesTDD.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=testng_sanity.xml"
+                    bat "mvn clean test -Dsurefire.suiteXmlFiles=testng_sanity.xml -Denv=${envName}"
                     
                 }
             }
