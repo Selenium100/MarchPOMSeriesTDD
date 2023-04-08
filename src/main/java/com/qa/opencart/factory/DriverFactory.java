@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
@@ -13,6 +15,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -40,7 +44,15 @@ public class DriverFactory {
 		switch (browser) {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
-			tl.set(new ChromeDriver(option.getChromeOptions()));
+			//tl.set(new ChromeDriver(option.getChromeOptions()));
+			DesiredCapabilities cap = new DesiredCapabilities();
+			cap.setCapability("browserName", "chrome");
+			try {
+				tl.set(new RemoteWebDriver(new URL("http://192.168.240.1:4444/wd/hub"), cap));
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			break;
 
 		case "ff":
