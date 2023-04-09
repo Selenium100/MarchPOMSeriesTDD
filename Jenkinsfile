@@ -13,7 +13,7 @@ pipeline
         
         stage("Deploy to QA"){
             steps{
-                echo("deploy to qa")
+                echo "====>>>>>  Running ${env.BUILD_ID} on ${env.JENKINS_URL}  =========>>>>"
             }
         }
                 
