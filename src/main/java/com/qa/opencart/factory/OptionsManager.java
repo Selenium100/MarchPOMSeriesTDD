@@ -53,9 +53,9 @@ public class OptionsManager {
 		if(Boolean.parseBoolean(prop.getProperty("incognito"))) {
 			eo.addArguments("--incognito");
 		}
-		if(Boolean.parseBoolean(prop.getProperty("remoteAllowOrigin"))) {
-			eo.addArguments("--remote-allow-origins=*");
-		}
+//		if(Boolean.parseBoolean(prop.getProperty("remoteAllowOrigin"))) {
+//			eo.addArguments("--remote-allow-origins=*");
+//		}
 		return eo;
 	}
 
