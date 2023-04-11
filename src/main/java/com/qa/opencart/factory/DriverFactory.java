@@ -105,7 +105,7 @@ public class DriverFactory {
 			try {
 				tl.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), option.getChromeOptions()));
 			} catch (MalformedURLException e) {
-				// TODO Auto-generated catch block
+				System.out.println("###### GRID SETUP IS NOT UP ########");
 				e.printStackTrace();
 			}
 		} else if (browser.equalsIgnoreCase("edge")) {
@@ -113,6 +113,7 @@ public class DriverFactory {
 				tl.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), option.getEdgeOptions()));
 			} catch (MalformedURLException e) {
 				// TODO Auto-generated catch block
+				System.out.println("###### GRID SETUP IS NOT UP ########");
 				e.printStackTrace();
 			}
 		} else if (browser.equalsIgnoreCase("ff")) {
@@ -120,6 +121,7 @@ public class DriverFactory {
 				tl.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), option.getFirefoxOptions()));
 			} catch (MalformedURLException e) {
 				// TODO Auto-generated catch block
+				System.out.println("###### GRID SETUP IS NOT UP ########");
 				e.printStackTrace();
 			}
 		} else {
