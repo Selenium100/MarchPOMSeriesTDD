@@ -2,6 +2,10 @@ pipeline
 {
     agent any
     
+    options{
+    timestamps()
+    }
+    
     tools{
     	maven 'M2'
         }
