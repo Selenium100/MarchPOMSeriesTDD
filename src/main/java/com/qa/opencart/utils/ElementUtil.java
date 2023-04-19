@@ -453,4 +453,13 @@ public class ElementUtil {
 
 	}
 
+	public boolean isMandetoryField(String script) {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+	String man_ele =	 js.executeScript("return window.getComputedStyle(document.querySelector(\"label[for='"+script+"'\"),\"::before\").getPropertyValue(\"content\")" ).toString();
+		if(man_ele.contains("*")) {
+			return true;
+		}
+		return false;
+	}
+
 }

@@ -35,7 +35,11 @@ public class RegistrationPage {
 	public String userRegister(String firstName, String lastName, String email,String telephone, String password,
 			                 String subscribe ) {
 		
+		boolean isFirstNameMandetory= eleUtil.isMandetoryField("input-firstname");
+		System.out.println("Is FirstName Mandetory? " + isFirstNameMandetory);
 		eleUtil.doSendKeysWithVisibleElement(this.firstName, AppConstants.DEFAULT_TIMEOUT, firstName);
+		boolean isLastNameMandetory= eleUtil.isMandetoryField("input-lastname");
+		System.out.println("Is Lastname Mandetory? " + isLastNameMandetory);
 		eleUtil.doSendKeys(this.lastName, lastName);
 		eleUtil.doSendKeys(this.email, email);
 		eleUtil.doSendKeys(this.telephone, telephone);
@@ -62,6 +66,7 @@ public class RegistrationPage {
 		
 		
 	}
+	
 	
 	
 

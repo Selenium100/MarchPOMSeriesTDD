@@ -1,4 +1,4 @@
-package com.qa.opencart.errors;
+package com.qa.opencart.InterviewQuestions;
 
 public class FrameworkException extends RuntimeException {
 	

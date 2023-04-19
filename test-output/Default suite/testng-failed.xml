@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.opencart.tests.LoginTest">
+      <class name="com.qa.opencart.tests.Test3">
         <methods>
-          <include name="doLogin"/>
+          <include name="actionsTesting"/>
           <include name="setup"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.opencart.tests.LoginTest -->
+      </class> <!-- com.qa.opencart.tests.Test3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

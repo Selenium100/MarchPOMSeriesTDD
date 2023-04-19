@@ -37,5 +37,7 @@ public class RegisterTest extends BaseTest {
 		String successMessage =  register.userRegister(firstName, lastName, randomEmail(), telehone, password, subscribe);
 		Assert.assertEquals(successMessage, AppConstants.ACC_CREATE_SUCCESS_MSG);
 	}
+	
+	
 
 }
