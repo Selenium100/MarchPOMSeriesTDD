@@ -29,7 +29,7 @@ public class DriverFactory {
 	public static OptionsManager option;
 
 	/**
-	 * This method initialize the driver on the basis of given browser. This is made by Nitya..
+	 * This method initialize the driver on the basis of given browser.
 	 * 
 	 * @param browser
 	 * @return driver
