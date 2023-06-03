@@ -2,20 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38991" started-at="2023-04-19T16:54:30Z" finished-at="2023-04-19T16:55:09Z">
+  <suite name="Default suite" duration-ms="13938" started-at="2023-06-03T19:56:40Z" finished-at="2023-06-03T19:56:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38991" started-at="2023-04-19T16:54:30Z" finished-at="2023-04-19T16:55:09Z">
-      <class name="com.qa.opencart.InterviewQuestions.NewTabDemo">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.opencart.InterviewQuestions.NewTabDemo@3c1e3314]" name="setup" is-config="true" duration-ms="10393" started-at="2023-04-19T22:24:30Z" finished-at="2023-04-19T22:24:40Z">
+    <test name="Default test" duration-ms="13938" started-at="2023-06-03T19:56:40Z" finished-at="2023-06-03T19:56:54Z">
+      <class name="com.qa.opencart.tests.DragAndDropToFrame">
+        <test-method status="PASS" signature="dragAndDrop()[pri:0, instance:com.qa.opencart.tests.DragAndDropToFrame@6058e535]" name="dragAndDrop" duration-ms="13685" started-at="2023-06-04T01:26:41Z" finished-at="2023-06-04T01:26:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="newTabTest()[pri:0, instance:com.qa.opencart.InterviewQuestions.NewTabDemo@3c1e3314]" name="newTabTest" duration-ms="28394" started-at="2023-04-19T22:24:40Z" finished-at="2023-04-19T22:25:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newTabTest -->
-      </class> <!-- com.qa.opencart.InterviewQuestions.NewTabDemo -->
+        </test-method> <!-- dragAndDrop -->
+      </class> <!-- com.qa.opencart.tests.DragAndDropToFrame -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

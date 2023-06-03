@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.opencart.tests.Test3">
+      <class name="com.qa.opencart.tests.DragAndDropToFrame">
         <methods>
-          <include name="actionsTesting"/>
-          <include name="setup"/>
+          <include name="dragAndDrop"/>
         </methods>
-      </class> <!-- com.qa.opencart.tests.Test3 -->
+      </class> <!-- com.qa.opencart.tests.DragAndDropToFrame -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

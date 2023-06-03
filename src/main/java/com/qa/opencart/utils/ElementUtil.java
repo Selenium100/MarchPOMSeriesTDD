@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Set;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -34,6 +35,19 @@ public class ElementUtil {
 		this.driver = driver;
 		act = new Actions(driver);
 		jsUtil = new JavaScriptUtil(driver);
+	}
+	
+	public void switchToChildWindow(String currentWindowId) {
+		
+		Set<String> windows = driver.getWindowHandles();
+		
+		ArrayList<String> winArr = new ArrayList<String>(windows);
+		for(String each:winArr) {
+			if(currentWindowId!=each) {
+				driver.switchTo().window(each);
+			}
+		}
+		
 	}
 
 	public void doSendKeys(By locator, String value) {
